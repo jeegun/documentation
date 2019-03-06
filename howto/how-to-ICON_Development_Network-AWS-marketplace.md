@@ -42,7 +42,7 @@ chmod 400 my-key-pair.pem
 
 1. Visit **AWS Marketplace**
 https://console.aws.amazon.com/marketplace
-![AWS Marketplace](./images/AWS_Marketplace.png) (LINK TO PICTURE IS BROKEN)
+![AWS Marketplace](./images/AWS_Marketplace.png)
 2. Search by keyword "ICON Development Network" or visit the URL below. Then, click **Continue to Subscribe**
 https://aws.amazon.com/marketplace/pp/B07KBTZHZD?ref_=aws-mp-console-subscription-detail
 ![ICON Development Network](./images/ICON_Development_Network.png)
@@ -258,7 +258,7 @@ $ cat <keystorepath>
 {"address": "hx4d1042e98770dcbab06ae4b55d09b1215e6d3af8", "crypto": {"cipher": "aes-128-ctr", "cipherparams": {"iv": "2621384865fceeb2988767c64dfe274e"}, "ciphertext": "5505c45ff3dce6742aa4f1630ffbc154b090176716e06942ec67f9bd1549e48b", "kdf": "scrypt", "kdfparams": {"dklen": 32, "n": 16384, "r": 1, "p": 8, "salt": "716a3d1ea83d6e540caeba473bea155d"}, "mac": "a88bc55b881f8b6c74b18b2d73d153bea8d5e178b3d54ae0f500be5e627c0cf1"}, "id": "e1939d52-617e-4a18-96c0-aec1b1cdfbc1", "version": 3, "coinType": "icx"}
 ```
 
-Before sending the transaction. You need to create a send.json file that file contains "from" and "to" information. "from" is the send address and "to" is the receive address (you can also use the address of the genesis block that you viewed with the lastblock or blockbyheight, since it is not a commission function because it is a development network).
+Before sending the transaction. You need to create a send.json file that contains "from" and "to" information. "from" is the sending address and "to" is the receiving address (you can also use the address of the genesis block that you viewed with the lastblock or blockbyheight, since it is not a commission function because it is a development network).
 ```
 $ vi send.json
 {
